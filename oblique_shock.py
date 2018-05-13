@@ -15,7 +15,7 @@ def oblique_shock_wave_properties(M_1, beta, gamma):
     M_n2 = math.sqrt((M_n1**2*(gamma - 1) + 2)/(2*gamma*M_n1**2 - (gamma - 1)))
     M_2 = M_n2/math.sin(beta - theta)
 
-    return [M_2, theta];
+    return [M_2, theta, beta];
 
 
 if __name__ == "__main__": 
@@ -23,7 +23,7 @@ if __name__ == "__main__":
    gamma = float(input("Enter the value of gamma: "))
    beta = float(input("Enter the value of shock wave angle (in degrees): "))
 
-   [M_2, theta]  = oblique_shock_wave_properties(M_1, beta, gamma)
+   [M_2, theta, beta]  = oblique_shock_wave_properties(M_1, beta, gamma)
    theta = theta*180/math.pi
    print("M_2= " + str(M_2))
    print("theta = " + str(theta))
