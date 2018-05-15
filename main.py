@@ -30,7 +30,7 @@ from taylor_maccoll import *
 
 #******************************** COMPUTATION ****************************************
 
-V_max = math.sqrt(C_p*T0) # Max theoretical speed
+V_max = math.sqrt(2*C_p*T0) # Max theoretical speed
 [M_2, delta, beta] = oblique_shock_wave_properties(M_inf, beta, gamma)
 
 # Setting up initial conditions
